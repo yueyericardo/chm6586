@@ -1,4 +1,4 @@
-Use `gau h2o` to submit a job  
+Use `gau h2o` to submit a job (h2o.com)
 instead of `vim h2o.sh` , edit, then `sbatch h2o.sh`
 
 - create a file in `~/script/gau.sh`
