@@ -40,3 +40,10 @@ alias gau='sbatch ~/script/gau.sh'
   Now `gau h2o` should working. Note that `gau` only the filename(h2o), not including extension (h2o.com).
 
 - if you have `first.com` `second.com` `third.com` .You can also use `gau first second third `to run all of them. So you can do a lot job in a single line, but I will recommend not run so much at once, this will use a lot memeory, 3 or 4 at once may be a good choice.
+
+another way of alias
+```
+gau() {
+    qsub ~/script/gau.pbs -v file=$1
+}
+```
